@@ -7,9 +7,9 @@ django.setup()
 from django.contrib.auth.models import User
 
 def create_superuser():
-    username = 'akhil'
-    email = 'akhilchowdary030@gmail.com'
-    password = 'akhil@123'
+    username = 'admin'
+    email = 'admin@example.com'
+    password = 'yourpassword'
    
 
     if User.objects.filter(username=username).exists():
@@ -20,3 +20,4 @@ def create_superuser():
 
 if __name__ == "__main__":
     create_superuser()
+
